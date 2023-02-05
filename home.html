@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KBTC PBS Device Inventory</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="logo-container">
+    <img class="logo" src="https://d1qbemlbhjecig.cloudfront.net/prod/filer_public/kbtc-bento-live-pbs/Carousel%20Logos%20/c07655c95f_KBTC-LOGO-COLOR_1.png">
+  </div>
+  <h1>Device Inventory</h1>
+    <div class="buttons-container">
+        <button id="createButton">Create</button>
+        <button class="edit-button">Edit</button>
+        <button class="read-button">Read</button>
+        <button class="delete-button">Delete</button>
+    </div>
+    <p>This website is currently under development and will soon be linked to a SQL database for easy device management.</p>
+    <form id="createSheetForm">
+      <label for="sheetName">Enter the name of the blank database sheet:</label>
+      <input type="text" id="sheetName" name="sheetName">
+      <br><br>
+      <button type="submit">Submit</button>
+      <button type="button" id="cancelButton">Cancel</button>
+    </form>
+  <script src="script.js"></script>
+  </body>
+</html>
