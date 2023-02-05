@@ -8,9 +8,157 @@
   <div class="logo-container">
     <img class="logo" src="https://d1qbemlbhjecig.cloudfront.net/prod/filer_public/kbtc-bento-live-pbs/Carousel%20Logos%20/c07655c95f_KBTC-LOGO-COLOR_1.png">
   </div>
+  
   <h1>Device Inventory</h1>
+
+  <button id="createTableButton">Create Table</button>
+  <div id="tableContainer"></div>
+  
+  <script>
+ let createTableButton = document.getElementById("createTableButton");
+createTableButton.addEventListener("click", function() {
+  let tableContainer = document.getElementById("tableContainer");
+
+  let table = document.createElement("table");
+  table.border = "1";
+
+  let headerRow = document.createElement("tr");
+  let headerCell1 = document.createElement("th");
+  headerCell1.innerHTML = "Name";
+  headerRow.appendChild(headerCell1);
+  let headerCell2 = document.createElement("th");
+  headerCell2.innerHTML = "Job Title";
+  headerRow.appendChild(headerCell2);
+  let headerCell3 = document.createElement("th");
+  headerCell3.innerHTML = "Email";
+  headerRow.appendChild(headerCell3);
+  let headerCell4 = document.createElement("th");
+  headerCell4.innerHTML = "Phones";
+  headerRow.appendChild(headerCell4);
+  let headerCell5 = document.createElement("th");
+  headerCell5.innerHTML = "y/n";
+  headerRow.appendChild(headerCell5);
+  let headerCell6 = document.createElement("th");
+  headerCell6.innerHTML = "????";
+  headerRow.appendChild(headerCell6);
+  table.appendChild(headerRow);
+
+  let row1 = document.createElement("tr");
+  let cell1_1 = document.createElement("td");
+  cell1_1.innerHTML = "1,  1";
+  row1.appendChild(cell1_1);
+  let cell1_2 = document.createElement("td");
+  cell1_2.innerHTML = " 1,  2";
+  row1.appendChild(cell1_2);
+  let cell1_3 = document.createElement("td");
+  cell1_3.innerHTML = " 1, 3";
+  row1.appendChild(cell1_3);
+  let cell1_4 = document.createElement("td");
+  cell1_4.innerHTML = " 1, 4";
+  row1.appendChild(cell1_4);
+  let cell1_5 = document.createElement("td");
+  cell1_5.innerHTML = " 1, 5";
+  row1.appendChild(cell1_5);
+  let cell1_6 = document.createElement("td");
+  cell1_6.innerHTML = " 1, 6";
+  row1.appendChild(cell1_6);
+  table.appendChild(row1);
+
+  let row2 = document.createElement("tr");
+  let cell2_1 = document.createElement("td");
+  cell2_1.innerHTML = " 2, 1";
+  row2.appendChild(cell2_1);
+  let cell2_2 = document.createElement("td");
+  cell2_2.innerHTML = " 2, 2";
+  row2.appendChild(cell2_2);
+  let cell2_3 = document.createElement("td");
+  cell2_3.innerHTML = " 2,  3";
+  row2.appendChild(cell2_3);
+  let cell2_4 = document.createElement("td");
+  cell2_4.innerHTML = " 2,  4";
+  row2.appendChild(cell2_4);
+  let cell2_5 = document.createElement("td");
+  cell2_5.innerHTML = " 2,  5";
+  row2.appendChild(cell2_5);
+  let cell2_6 = document.createElement("td");
+  cell2_6.innerHTML = " 2,  6";
+  row2.appendChild(cell2_6);
+  table.appendChild(row2);
+
+  tableContainer.appendChild(table);
+
+  
+});
+
+
+
+  </script>
+    <div>
+      <table id="create_table">
+        <colgroup>
+          <col>
+          <col>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+      
+        <tr>
+          <th>Name</th>
+          <th>Job Title</th> 
+          <th>Email address</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+      
+        <tr>
+          <td>Anna Fitzgerald</td>
+          <td>Staff Writer</td>
+          <td>example@company.com</td>
+          <td>888-888-880</td>
+          <td>888-888-881</td>
+        </tr>
+      
+        <tr>
+          <td>John Smith</td>
+          <td>Marketing Manager</td>
+          <td>example2@company.com</td>
+          <td>888-888-882</td>
+          <td>888-888-883</td>
+        </tr>
+  
+        <tr>
+          <td>Zendaya Grace</td>
+          <td>CEO</td>
+          <td>example2@company.com</td>
+          <td>888-888-884</td>
+          <td>888-888-885</td>
+        </tr>
+      </table>
+  
+      
+      <script>
+        function myFunction() {
+          var table = document.getElementById("create_table");
+          var row = table.insertRow(1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          cell1.innerHTML = "Name";
+          cell2.innerHTML = "Job?";
+          cell3.innerHTML = "Email";
+          cell4.innerHTML = "###-###-####";
+          cell5.innerHTML = "###-###-####";
+        }
+        </script>
+      
+      
+      
+        
+      </div>
     <div class="buttons-container">
-        <button id="createButton">Create</button>
+        <button id="createButton" type = "button" onclick="myFunction()">Create</button>
         <button class="edit-button">Edit</button>
         <button class="read-button">Read</button>
         <button class="delete-button">Delete</button>
