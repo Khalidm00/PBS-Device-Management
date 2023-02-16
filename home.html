@@ -11,88 +11,38 @@
   
   <h1>Device Inventory</h1>
 
-  <button id="createTableButton">Create Table</button>
+
   <div id="tableContainer"></div>
   
   <script>
- let createTableButton = document.getElementById("createTableButton");
-createTableButton.addEventListener("click", function() {
-  let tableContainer = document.getElementById("tableContainer");
-
-  let table = document.createElement("table");
-  table.border = "1";
-
-  let headerRow = document.createElement("tr");
-  let headerCell1 = document.createElement("th");
-  headerCell1.innerHTML = "Name";
-  headerRow.appendChild(headerCell1);
-  let headerCell2 = document.createElement("th");
-  headerCell2.innerHTML = "Job Title";
-  headerRow.appendChild(headerCell2);
-  let headerCell3 = document.createElement("th");
-  headerCell3.innerHTML = "Email";
-  headerRow.appendChild(headerCell3);
-  let headerCell4 = document.createElement("th");
-  headerCell4.innerHTML = "Phones";
-  headerRow.appendChild(headerCell4);
-  let headerCell5 = document.createElement("th");
-  headerCell5.innerHTML = "y/n";
-  headerRow.appendChild(headerCell5);
-  let headerCell6 = document.createElement("th");
-  headerCell6.innerHTML = "????";
-  headerRow.appendChild(headerCell6);
-  table.appendChild(headerRow);
-
-  let row1 = document.createElement("tr");
-  let cell1_1 = document.createElement("td");
-  cell1_1.innerHTML = "1,  1";
-  row1.appendChild(cell1_1);
-  let cell1_2 = document.createElement("td");
-  cell1_2.innerHTML = " 1,  2";
-  row1.appendChild(cell1_2);
-  let cell1_3 = document.createElement("td");
-  cell1_3.innerHTML = " 1, 3";
-  row1.appendChild(cell1_3);
-  let cell1_4 = document.createElement("td");
-  cell1_4.innerHTML = " 1, 4";
-  row1.appendChild(cell1_4);
-  let cell1_5 = document.createElement("td");
-  cell1_5.innerHTML = " 1, 5";
-  row1.appendChild(cell1_5);
-  let cell1_6 = document.createElement("td");
-  cell1_6.innerHTML = " 1, 6";
-  row1.appendChild(cell1_6);
-  table.appendChild(row1);
-
-  let row2 = document.createElement("tr");
-  let cell2_1 = document.createElement("td");
-  cell2_1.innerHTML = " 2, 1";
-  row2.appendChild(cell2_1);
-  let cell2_2 = document.createElement("td");
-  cell2_2.innerHTML = " 2, 2";
-  row2.appendChild(cell2_2);
-  let cell2_3 = document.createElement("td");
-  cell2_3.innerHTML = " 2,  3";
-  row2.appendChild(cell2_3);
-  let cell2_4 = document.createElement("td");
-  cell2_4.innerHTML = " 2,  4";
-  row2.appendChild(cell2_4);
-  let cell2_5 = document.createElement("td");
-  cell2_5.innerHTML = " 2,  5";
-  row2.appendChild(cell2_5);
-  let cell2_6 = document.createElement("td");
-  cell2_6.innerHTML = " 2,  6";
-  row2.appendChild(cell2_6);
-  table.appendChild(row2);
-
-  tableContainer.appendChild(table);
-
-  
-});
-
-
-
-  </script>
+    let createTableButton = document.getElementById("createTableButton");
+    createTableButton.addEventListener("click", function() {
+      let tableContainer = document.getElementById("tableContainer");
+      let table = tableContainer.lastElementChild;
+      let newRow = document.createElement("tr");
+    
+      let newCell1 = document.createElement("td");
+      newCell1.innerHTML = "New Cell 1";
+      newRow.appendChild(newCell1);
+      let newCell2 = document.createElement("td");
+      newCell2.innerHTML = "New Cell 2";
+      newRow.appendChild(newCell2);
+      let newCell3 = document.createElement("td");
+      newCell3.innerHTML = "New Cell 3";
+      newRow.appendChild(newCell3);
+      let newCell4 = document.createElement("td");
+      newCell4.innerHTML = "New Cell 4";
+      newRow.appendChild(newCell4);
+      let newCell5 = document.createElement("td");
+      newCell5.innerHTML = "New Cell 5";
+      newRow.appendChild(newCell5);
+      let newCell6 = document.createElement("td");
+      newCell6.innerHTML = "New Cell 6";
+      newRow.appendChild(newCell6);
+    
+      table.appendChild(newRow);
+    });
+    </script>
     <div>
       <table id="create_table">
         <colgroup>
@@ -104,34 +54,59 @@ createTableButton.addEventListener("click", function() {
         </colgroup>
       
         <tr>
-          <th>Name</th>
-          <th>Job Title</th> 
-          <th>Email address</th>
-          <th colspan="2">Telephone</th>
+          <th>Device ID</th>
+          <th>Brand/OS</th> 
+          <th>Model</th>
+          <th>Serial Number</th>
+          <th>Usable</th>
+          <th>Password</th>
+          <th>WIFI</th>
+          <th>Chargeable</th>
+          <th>Factory Reset</th>
+          <th>Speakers/Mic</th>
+          <th>System Update</th>
         </tr>
       
         <tr>
-          <td>Anna Fitzgerald</td>
-          <td>Staff Writer</td>
-          <td>example@company.com</td>
-          <td>888-888-880</td>
-          <td>888-888-881</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
       
         <tr>
-          <td>John Smith</td>
-          <td>Marketing Manager</td>
-          <td>example2@company.com</td>
-          <td>888-888-882</td>
-          <td>888-888-883</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
   
         <tr>
-          <td>Zendaya Grace</td>
-          <td>CEO</td>
-          <td>example2@company.com</td>
-          <td>888-888-884</td>
-          <td>888-888-885</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
       </table>
   
@@ -145,11 +120,24 @@ createTableButton.addEventListener("click", function() {
           var cell3 = row.insertCell(2);
           var cell4 = row.insertCell(3);
           var cell5 = row.insertCell(4);
-          cell1.innerHTML = "Name";
-          cell2.innerHTML = "Job?";
-          cell3.innerHTML = "Email";
-          cell4.innerHTML = "###-###-####";
-          cell5.innerHTML = "###-###-####";
+          var cell6 = row.insertCell(5);
+          var cell7 = row.insertCell(6);
+          var cell8 = row.insertCell(7);
+          var cell9 = row.insertCell(8);
+          var cell10 = row.insertCell(9);
+          var cell11 = row.insertCell(10);
+          cell1.innerHTML = "";
+          cell2.innerHTML = "";
+          cell3.innerHTML = "";
+          cell4.innerHTML = "";
+          cell5.innerHTML = "";
+          cell6.innerHTML = "";
+          cell7.innerHTML = "";
+          cell8.innerHTML = "";
+          cell9.innerHTML = "";
+          cell10.innerHTML = "";
+          cell11.innerHTML = "";
+
         }
         </script>
       
